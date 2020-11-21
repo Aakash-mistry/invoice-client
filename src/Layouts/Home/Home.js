@@ -19,7 +19,7 @@ export class Home extends Component {
           searchText: "",
      };
      componentDidMount() {
-          Axios.get(`http://localhost:8000/all-invoices`).then((res) => {
+          Axios.get(`https://invoice-saver-api.herokuapp.com/all-invoices`).then((res) => {
                const Invoices = res.data;
                // console.log(categories);
                this.setState({ Invoices, isLoading: false });
