@@ -26,7 +26,7 @@ function NewInvoice(props) {
      async function handleSubmit(e) {
           e.preventDefault();
           // console.log(e);
-          await Axios.post(`http://localhost:8000/create-invoice`, {
+          await Axios.post(`https://invoice-saver-api.herokuapp.com/create-invoice`, {
                seller: state.seller,
                category: state.category,
                totalAmount: state.amount,
